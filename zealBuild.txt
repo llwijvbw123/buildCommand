@@ -1,0 +1,10 @@
+zeal(mac os dash)  
+build command 
+cd zeal source root dir
+make build && cd build
+brew install qt libarchive
+cmake .. -DCMAKE_PREFIX_PATH=/usr/local/Cellar/qt\@5.5/5.5.1_1/ 
+-DLibArchive_LIBRARY=/usr/local/Cellar/libarchive/3.3.2/lib/libarchive.dylib 
+-DLibArchive_INCLUDE_DIR=/usr/local/Cellar/libarchive/3.3.2/include
+make 
+success
